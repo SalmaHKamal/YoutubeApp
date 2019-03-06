@@ -13,8 +13,9 @@
 		80BF6CB7222E85E8002A2604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BF6CB6222E85E8002A2604 /* Assets.xcassets */; };
 		80BF6CBA222E85E8002A2604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BF6CB8222E85E8002A2604 /* LaunchScreen.storyboard */; };
 		80BF6CC2222E8997002A2604 /* UINavControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BF6CC1222E8997002A2604 /* UINavControllerExtension.swift */; };
-		80F0D51B222F2F0000659C9E /* VideoCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0D51A222F2F0000659C9E /* VideoCellView.swift */; };
-		80F0D51D222F2F2300659C9E /* VideoCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F0D51C222F2F2300659C9E /* VideoCellView.xib */; };
+		80F24BC2222FA83E0063BFFD /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F24BC0222FA83E0063BFFD /* VideoCell.swift */; };
+		80F24BC3222FA83E0063BFFD /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F24BC1222FA83E0063BFFD /* VideoCell.xib */; };
+		80F24BC5222FBA650063BFFD /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F24BC4222FBA650063BFFD /* BaseCell.swift */; };
 		C6665B8D72AF3D8D67FDDEB3 /* Pods_YoutubeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6456270D0B3852482AB33BE /* Pods_YoutubeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +29,9 @@
 		80BF6CB9222E85E8002A2604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80BF6CBB222E85E8002A2604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80BF6CC1222E8997002A2604 /* UINavControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavControllerExtension.swift; sourceTree = "<group>"; };
-		80F0D51A222F2F0000659C9E /* VideoCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCellView.swift; sourceTree = "<group>"; };
-		80F0D51C222F2F2300659C9E /* VideoCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCellView.xib; sourceTree = "<group>"; };
+		80F24BC0222FA83E0063BFFD /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		80F24BC1222FA83E0063BFFD /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		80F24BC4222FBA650063BFFD /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		9235A393FFFDCB6B72018C64 /* Pods-YoutubeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E6456270D0B3852482AB33BE /* Pods_YoutubeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		80BF6CAE222E85E7002A2604 /* YoutubeApp */ = {
 			isa = PBXGroup;
 			children = (
+				80F24BBF222FA8130063BFFD /* Video cell */,
 				80BF6CAF222E85E7002A2604 /* AppDelegate.swift */,
 				80BF6CB1222E85E7002A2604 /* HomeViewController.swift */,
 				80BF6CB3222E85E7002A2604 /* Main.storyboard */,
@@ -82,18 +85,18 @@
 				80BF6CB8222E85E8002A2604 /* LaunchScreen.storyboard */,
 				80BF6CBB222E85E8002A2604 /* Info.plist */,
 				80BF6CC1222E8997002A2604 /* UINavControllerExtension.swift */,
-				80F0D51E222F2F3400659C9E /* VideoCell View */,
+				80F24BC4222FBA650063BFFD /* BaseCell.swift */,
 			);
 			path = YoutubeApp;
 			sourceTree = "<group>";
 		};
-		80F0D51E222F2F3400659C9E /* VideoCell View */ = {
+		80F24BBF222FA8130063BFFD /* Video cell */ = {
 			isa = PBXGroup;
 			children = (
-				80F0D51C222F2F2300659C9E /* VideoCellView.xib */,
-				80F0D51A222F2F0000659C9E /* VideoCellView.swift */,
+				80F24BC0222FA83E0063BFFD /* VideoCell.swift */,
+				80F24BC1222FA83E0063BFFD /* VideoCell.xib */,
 			);
-			path = "VideoCell View";
+			path = "Video cell";
 			sourceTree = "<group>";
 		};
 		E57EB1CB680D36F17021EA45 /* Pods */ = {
@@ -165,7 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80F0D51D222F2F2300659C9E /* VideoCellView.xib in Resources */,
+				80F24BC3222FA83E0063BFFD /* VideoCell.xib in Resources */,
 				80BF6CBA222E85E8002A2604 /* LaunchScreen.storyboard in Resources */,
 				80BF6CB7222E85E8002A2604 /* Assets.xcassets in Resources */,
 				80BF6CB5222E85E7002A2604 /* Main.storyboard in Resources */,
@@ -226,9 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80F0D51B222F2F0000659C9E /* VideoCellView.swift in Sources */,
+				80F24BC2222FA83E0063BFFD /* VideoCell.swift in Sources */,
 				80BF6CB2222E85E7002A2604 /* HomeViewController.swift in Sources */,
 				80BF6CB0222E85E7002A2604 /* AppDelegate.swift in Sources */,
+				80F24BC5222FBA650063BFFD /* BaseCell.swift in Sources */,
 				80BF6CC2222E8997002A2604 /* UINavControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

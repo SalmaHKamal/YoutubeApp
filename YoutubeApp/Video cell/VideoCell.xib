@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videoCellId" id="gTV-IL-0wX" customClass="VideoCell" customModule="YoutubeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="303"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="303"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taylor_swift_blank_space" translatesAutoresizingMaskIntoConstraints="NO" id="EXC-hY-NAe">
+                        <rect key="frame" x="16" y="16" width="401" height="218.5"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taylor_swift_profile" translatesAutoresizingMaskIntoConstraints="NO" id="6hU-Rf-nAY">
+                        <rect key="frame" x="16" y="242.5" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="ZEx-Cz-dzq"/>
+                            <constraint firstAttribute="height" constant="44" id="kcB-Rm-VKb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taylor Swift - Blank Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3R-xv-3XY" userLabel="name Label">
+                        <rect key="frame" x="68" y="242.5" width="349" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Tya-lY-jzN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TaylorSwiftVIVO • 1,230,456 views • 2 years" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u2t-NR-le4" userLabel="desc Text View">
+                        <rect key="frame" x="68" y="266.5" width="349" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="GBa-Hm-mBe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLP-2U-J1p" userLabel="seperator View">
+                        <rect key="frame" x="0.0" y="302.5" width="433" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Q7w-Vw-FY0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EXC-hY-NAe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="7vt-2X-yYm"/>
+                <constraint firstItem="b3R-xv-3XY" firstAttribute="leading" secondItem="6hU-Rf-nAY" secondAttribute="trailing" constant="8" id="Est-Og-2Km"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="OLP-2U-J1p" secondAttribute="bottom" id="Jak-0x-AMA"/>
+                <constraint firstAttribute="trailing" secondItem="OLP-2U-J1p" secondAttribute="trailing" id="MIP-7H-Wnt"/>
+                <constraint firstItem="u2t-NR-le4" firstAttribute="trailing" secondItem="EXC-hY-NAe" secondAttribute="trailing" id="Ms7-km-TA1"/>
+                <constraint firstItem="OLP-2U-J1p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N19-rD-QqI"/>
+                <constraint firstItem="EXC-hY-NAe" firstAttribute="bottom" secondItem="b3R-xv-3XY" secondAttribute="top" constant="-8" id="SLK-uc-GZ8"/>
+                <constraint firstItem="EXC-hY-NAe" firstAttribute="bottom" secondItem="6hU-Rf-nAY" secondAttribute="top" constant="-8" id="UbP-Dd-gOw"/>
+                <constraint firstAttribute="trailing" secondItem="EXC-hY-NAe" secondAttribute="trailing" constant="16" id="XKT-NU-0zs"/>
+                <constraint firstItem="6hU-Rf-nAY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="c7d-DP-zg7"/>
+                <constraint firstItem="b3R-xv-3XY" firstAttribute="bottom" secondItem="u2t-NR-le4" secondAttribute="top" constant="-4" id="d29-On-Tkf"/>
+                <constraint firstItem="b3R-xv-3XY" firstAttribute="trailing" secondItem="EXC-hY-NAe" secondAttribute="trailing" id="iJD-C8-Es6"/>
+                <constraint firstItem="u2t-NR-le4" firstAttribute="leading" secondItem="6hU-Rf-nAY" secondAttribute="trailing" constant="8" id="nsA-wh-6OW"/>
+                <constraint firstItem="OLP-2U-J1p" firstAttribute="top" secondItem="6hU-Rf-nAY" secondAttribute="bottom" constant="16" id="u5S-Sx-bLd"/>
+                <constraint firstItem="EXC-hY-NAe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="uaO-KO-aGO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="433" height="303"/>
+            <connections>
+                <outlet property="descTextView" destination="u2t-NR-le4" id="5k4-jf-74J"/>
+                <outlet property="profileImage" destination="6hU-Rf-nAY" id="sgu-bh-1Ly"/>
+                <outlet property="seperatorView" destination="OLP-2U-J1p" id="ksS-cm-wbq"/>
+            </connections>
+            <point key="canvasLocation" x="87.200000000000003" y="25.637181409295355"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="taylor_swift_blank_space" width="1280" height="720"/>
+        <image name="taylor_swift_profile" width="101.5" height="97"/>
+    </resources>
+</document>
