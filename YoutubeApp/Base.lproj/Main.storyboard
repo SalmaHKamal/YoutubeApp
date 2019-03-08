@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="DL9-L8-mSW"/>
+                    <navigationItem key="navigationItem" id="DL9-L8-mSW">
+                        <rightBarButtonItems>
+                            <barButtonItem image="nav_more_icon" id="Umo-yc-dAV">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="moreBarItem:" destination="BYZ-38-t0r" id="Uyu-WH-TEI"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="search_icon" id="Fs2-kv-GmH">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,4 +57,8 @@
             <point key="canvasLocation" x="132" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nav_more_icon" width="24" height="24"/>
+        <image name="search_icon" width="24" height="24"/>
+    </resources>
 </document>

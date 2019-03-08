@@ -7,5 +7,6 @@ target 'YoutubeApp' do
 
   # Pods for YoutubeApp
 pod 'SnapKit'
+pod 'SDWebImage', '~> 4.0'
 
 end

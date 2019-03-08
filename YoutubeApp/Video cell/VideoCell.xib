@@ -29,7 +29,7 @@
                             <constraint firstAttribute="height" constant="44" id="kcB-Rm-VKb"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taylor Swift - Blank Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3R-xv-3XY" userLabel="name Label">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taylor Swift - Blank Space" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3R-xv-3XY" userLabel="name Label">
                         <rect key="frame" x="68" y="242.5" width="349" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="Tya-lY-jzN"/>
@@ -38,12 +38,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TaylorSwiftVIVO • 1,230,456 views • 2 years" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u2t-NR-le4" userLabel="desc Text View">
-                        <rect key="frame" x="68" y="266.5" width="349" height="30"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="TaylorSwiftVIVO • 1,230,456 views • 2 years ago salma" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2t-NR-le4" userLabel="desc Text View">
+                        <rect key="frame" x="68" y="266.5" width="349" height="49.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="GBa-Hm-mBe"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
@@ -78,8 +75,10 @@
             <size key="customSize" width="433" height="303"/>
             <connections>
                 <outlet property="descTextView" destination="u2t-NR-le4" id="5k4-jf-74J"/>
+                <outlet property="nameLabel" destination="b3R-xv-3XY" id="iQp-6L-Ccv"/>
                 <outlet property="profileImage" destination="6hU-Rf-nAY" id="sgu-bh-1Ly"/>
                 <outlet property="seperatorView" destination="OLP-2U-J1p" id="ksS-cm-wbq"/>
+                <outlet property="videoImage" destination="EXC-hY-NAe" id="5qO-Zh-5t5"/>
             </connections>
             <point key="canvasLocation" x="87.200000000000003" y="25.637181409295355"/>
         </collectionViewCell>

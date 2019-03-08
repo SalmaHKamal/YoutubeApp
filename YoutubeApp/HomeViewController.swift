@@ -11,10 +11,13 @@ import SnapKit
 
 class HomeViewController: UIViewController {
     
+    
     let cellId = "videoCellId"
+    var videos = [Video]()
     
     lazy var collectionView : UICollectionView = {
-        let cv = UICollectionView(frame: self.view.frame , collectionViewLayout: UICollectionViewFlowLayout())
+        let frame = CGRect(x: 0, y: menuBar.frame.height, width: view.frame.width, height: view.frame.height)
+        let cv = UICollectionView(frame: frame , collectionViewLayout: UICollectionViewFlowLayout())
         cv.delegate = self
         cv.dataSource = self
         
@@ -25,11 +28,49 @@ class HomeViewController: UIViewController {
         return cv
     }()
     
+    lazy var menuBar : MenuBar = {
+        let menuBar = MenuBar()
+        menuBar.frame = CGRect(x: 0, y: 0, width: self.view.frame.width , height: 50)
+        return menuBar
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.addSubview(menuBar)
         view.addSubview(collectionView)
+        fetchHomeVideos()
+
+        //title
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
+        titleLabel.text = "Home"
+        titleLabel.textColor = .white
+        titleLabel.font = UIFont.systemFont(ofSize: 20)
+        navigationItem.titleView = titleLabel
+        
+        //remove line under navigation bar
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    }
+    
+    func fetchHomeVideos() {
+        APIService.shared.getHomeFeed { (videos) in
+            if videos.count > 0 {
+                self.videos = videos
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            }
+        }
+    }
+    
+    
+    @IBAction func moreBarItem(_ sender: Any) {
+  
+        //settings
+        guard let settingsView = Bundle.main.loadNibNamed("SettingsMenuView", owner: self, options: nil)?.first as? SettingsMenuView else {return}
+
+//        self.view.addSubview(settingsView)
 
     }
 
@@ -38,13 +79,13 @@ class HomeViewController: UIViewController {
 extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return videos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? VideoCell
             else { return UICollectionViewCell() }
-        
+        cell.video = videos[indexPath.row]
         return cell
         
     }

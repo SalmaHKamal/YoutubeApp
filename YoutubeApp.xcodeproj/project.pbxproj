@@ -12,10 +12,17 @@
 		80BF6CB5222E85E7002A2604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BF6CB3222E85E7002A2604 /* Main.storyboard */; };
 		80BF6CB7222E85E8002A2604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BF6CB6222E85E8002A2604 /* Assets.xcassets */; };
 		80BF6CBA222E85E8002A2604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BF6CB8222E85E8002A2604 /* LaunchScreen.storyboard */; };
-		80BF6CC2222E8997002A2604 /* UINavControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BF6CC1222E8997002A2604 /* UINavControllerExtension.swift */; };
+		80BF6CC2222E8997002A2604 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BF6CC1222E8997002A2604 /* Extensions.swift */; };
+		80C3C3742232677700F93269 /* SettingsMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C3C3732232677700F93269 /* SettingsMenuView.xib */; };
+		80C3C37622326B1200F93269 /* SettingsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3C37522326B1200F93269 /* SettingsMenuView.swift */; };
+		80E5DF682231143900990EE0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5DF672231143900990EE0 /* APIService.swift */; };
 		80F24BC2222FA83E0063BFFD /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F24BC0222FA83E0063BFFD /* VideoCell.swift */; };
 		80F24BC3222FA83E0063BFFD /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F24BC1222FA83E0063BFFD /* VideoCell.xib */; };
 		80F24BC5222FBA650063BFFD /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F24BC4222FBA650063BFFD /* BaseCell.swift */; };
+		80F24BC7222FCD740063BFFD /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F24BC6222FCD740063BFFD /* MenuBar.swift */; };
+		80F24BCB222FD2DD0063BFFD /* MenuBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F24BC9222FD2DD0063BFFD /* MenuBarCell.swift */; };
+		80F24BCC222FD2DD0063BFFD /* MenuBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F24BCA222FD2DD0063BFFD /* MenuBarCell.xib */; };
+		80F24BCE222FE16B0063BFFD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F24BCD222FE16B0063BFFD /* Model.swift */; };
 		C6665B8D72AF3D8D67FDDEB3 /* Pods_YoutubeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6456270D0B3852482AB33BE /* Pods_YoutubeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,10 +35,17 @@
 		80BF6CB6222E85E8002A2604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80BF6CB9222E85E8002A2604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80BF6CBB222E85E8002A2604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80BF6CC1222E8997002A2604 /* UINavControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavControllerExtension.swift; sourceTree = "<group>"; };
+		80BF6CC1222E8997002A2604 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		80C3C3732232677700F93269 /* SettingsMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsMenuView.xib; sourceTree = "<group>"; };
+		80C3C37522326B1200F93269 /* SettingsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenuView.swift; sourceTree = "<group>"; };
+		80E5DF672231143900990EE0 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		80F24BC0222FA83E0063BFFD /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		80F24BC1222FA83E0063BFFD /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		80F24BC4222FBA650063BFFD /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		80F24BC6222FCD740063BFFD /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		80F24BC9222FD2DD0063BFFD /* MenuBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarCell.swift; sourceTree = "<group>"; };
+		80F24BCA222FD2DD0063BFFD /* MenuBarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBarCell.xib; sourceTree = "<group>"; };
+		80F24BCD222FE16B0063BFFD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9235A393FFFDCB6B72018C64 /* Pods-YoutubeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E6456270D0B3852482AB33BE /* Pods_YoutubeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +91,8 @@
 		80BF6CAE222E85E7002A2604 /* YoutubeApp */ = {
 			isa = PBXGroup;
 			children = (
+				80C3C3722232672800F93269 /* Views */,
+				80F24BC8222FD2B40063BFFD /* MenuBar cell */,
 				80F24BBF222FA8130063BFFD /* Video cell */,
 				80BF6CAF222E85E7002A2604 /* AppDelegate.swift */,
 				80BF6CB1222E85E7002A2604 /* HomeViewController.swift */,
@@ -84,10 +100,22 @@
 				80BF6CB6222E85E8002A2604 /* Assets.xcassets */,
 				80BF6CB8222E85E8002A2604 /* LaunchScreen.storyboard */,
 				80BF6CBB222E85E8002A2604 /* Info.plist */,
-				80BF6CC1222E8997002A2604 /* UINavControllerExtension.swift */,
+				80BF6CC1222E8997002A2604 /* Extensions.swift */,
 				80F24BC4222FBA650063BFFD /* BaseCell.swift */,
+				80F24BC6222FCD740063BFFD /* MenuBar.swift */,
+				80F24BCD222FE16B0063BFFD /* Model.swift */,
+				80E5DF672231143900990EE0 /* APIService.swift */,
 			);
 			path = YoutubeApp;
+			sourceTree = "<group>";
+		};
+		80C3C3722232672800F93269 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80C3C3732232677700F93269 /* SettingsMenuView.xib */,
+				80C3C37522326B1200F93269 /* SettingsMenuView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		80F24BBF222FA8130063BFFD /* Video cell */ = {
@@ -97,6 +125,15 @@
 				80F24BC1222FA83E0063BFFD /* VideoCell.xib */,
 			);
 			path = "Video cell";
+			sourceTree = "<group>";
+		};
+		80F24BC8222FD2B40063BFFD /* MenuBar cell */ = {
+			isa = PBXGroup;
+			children = (
+				80F24BC9222FD2DD0063BFFD /* MenuBarCell.swift */,
+				80F24BCA222FD2DD0063BFFD /* MenuBarCell.xib */,
+			);
+			path = "MenuBar cell";
 			sourceTree = "<group>";
 		};
 		E57EB1CB680D36F17021EA45 /* Pods */ = {
@@ -168,9 +205,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F24BCC222FD2DD0063BFFD /* MenuBarCell.xib in Resources */,
 				80F24BC3222FA83E0063BFFD /* VideoCell.xib in Resources */,
 				80BF6CBA222E85E8002A2604 /* LaunchScreen.storyboard in Resources */,
 				80BF6CB7222E85E8002A2604 /* Assets.xcassets in Resources */,
+				80C3C3742232677700F93269 /* SettingsMenuView.xib in Resources */,
 				80BF6CB5222E85E7002A2604 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,12 +248,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,9 +272,14 @@
 			files = (
 				80F24BC2222FA83E0063BFFD /* VideoCell.swift in Sources */,
 				80BF6CB2222E85E7002A2604 /* HomeViewController.swift in Sources */,
+				80F24BC7222FCD740063BFFD /* MenuBar.swift in Sources */,
+				80F24BCB222FD2DD0063BFFD /* MenuBarCell.swift in Sources */,
 				80BF6CB0222E85E7002A2604 /* AppDelegate.swift in Sources */,
 				80F24BC5222FBA650063BFFD /* BaseCell.swift in Sources */,
-				80BF6CC2222E8997002A2604 /* UINavControllerExtension.swift in Sources */,
+				80C3C37622326B1200F93269 /* SettingsMenuView.swift in Sources */,
+				80BF6CC2222E8997002A2604 /* Extensions.swift in Sources */,
+				80E5DF682231143900990EE0 /* APIService.swift in Sources */,
+				80F24BCE222FE16B0063BFFD /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

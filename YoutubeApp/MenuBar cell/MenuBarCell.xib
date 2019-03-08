@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuBarCellId" id="gTV-IL-0wX" customClass="MenuBarCell" customModule="YoutubeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="61" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="61" height="51"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VrR-NP-kzb">
+                        <rect key="frame" x="0.0" y="47" width="61" height="4"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="gE6-RH-sOf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gYJ-TE-kci"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="QUj-pH-74z">
+                        <rect key="frame" x="16.5" y="11.5" width="28" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="2JD-6E-aqE"/>
+                            <constraint firstAttribute="height" constant="28" id="9ro-pK-icO"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="VrR-NP-kzb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0E7-UH-3tP"/>
+                <constraint firstItem="QUj-pH-74z" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Ajw-2E-pwg"/>
+                <constraint firstAttribute="trailing" secondItem="VrR-NP-kzb" secondAttribute="trailing" id="Ion-PJ-I6R"/>
+                <constraint firstAttribute="bottom" secondItem="VrR-NP-kzb" secondAttribute="bottom" id="a6r-tf-7bs"/>
+                <constraint firstItem="QUj-pH-74z" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="xxW-Ev-889"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="61" height="51"/>
+            <connections>
+                <outlet property="menuItemImage" destination="QUj-pH-74z" id="ZPS-li-S2u"/>
+                <outlet property="underline" destination="VrR-NP-kzb" id="HS8-eL-sXM"/>
+            </connections>
+            <point key="canvasLocation" x="146.40000000000001" y="130.88455772113943"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home" width="40" height="40"/>
+    </resources>
+</document>

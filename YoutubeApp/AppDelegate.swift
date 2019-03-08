@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        UIApplication.shared.statusBarView?.backgroundColor = UIColor.rgb(red: 194, green: 31, blue: 31)
         
         
         return true

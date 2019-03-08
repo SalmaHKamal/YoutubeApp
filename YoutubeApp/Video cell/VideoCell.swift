@@ -7,12 +7,32 @@
 //
 
 import UIKit
+import SDWebImage
 
 class VideoCell: BaseCell {
+    
+    var video : Video? {
+        didSet{
+            if let video = video , let channel = video.channel {
+                nameLabel.text = video.title
+                videoImage?.sd_setImage(with: URL(string: video.thumbnail_image_name ?? ""), completed: nil)
+                profileImage.sd_setImage(with: URL(string: channel.profile_image_name ?? ""), completed: nil)
+                
+                let numberFormatter = NumberFormatter()
+                numberFormatter.numberStyle = .decimal
+                let formattedNOV = numberFormatter.string(from: video.number_of_views! as NSNumber)
+                descTextView.text = "\(channel.name ?? "") • \(formattedNOV ?? "") • 2 years ago "
+                
+            }
+        }
+    }
     
     @IBOutlet weak var descTextView: UITextView!
     @IBOutlet weak var seperatorView: UIView!
     @IBOutlet weak var profileImage: UIImageView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var videoImage: UIImageView!
     
 
     override func awakeFromNib() {
